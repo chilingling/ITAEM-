@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="两列右侧自适应布局">
+	<link rel="stylesheet" href="../CSS_reset/reset.css">
+	<title>两列右侧自适应布局</title>
+	<style>
+		.clear-fix:after{
+			content: "";
+			display: table;
+			clear:both;
+		}
+		.box{
+			margin: 100px auto 0;
+			width: 800px;
+		}
+		h4{
+			color: #fff;
+			text-align: center;
+		}
+		.left{
+			background-color: #4285F4;
+			float: left;
+			width: 90px;
+		}
+		.right{
+			display: inline-block;
+			/*float: right;*/
+			margin-left: -90px;
+			width: 100%;
+		}
+		.right_content{
+			background-color: #FBBC05;
+			margin-left: 100px;
+		}
+		.left,.right_content{
+			height: 100px;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left">
+			<h4>左侧定宽</h4>
+		</div>
+		<div class="right">
+			<div class="right_content">
+				<h4>右侧自适应</h4>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

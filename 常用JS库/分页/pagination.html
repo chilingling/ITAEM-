@@ -8,6 +8,7 @@
     <meta name="Author" content="chiling">
     <meta name="Keyword" content="分页">
     <meta name="Description" content="">
+    
     <title>Document</title>
     <style>
     body {
@@ -78,7 +79,10 @@
         </ul>
     </div>
     <script src="jquery-3.2.1.min.js"></script>
-    <script>
+    <!-- 引入分页js文件 -->
+    <script src="pagination.js"></script> 
+    
+    <!-- <script>
     const page = {
         total: 20,
         current: 0,
@@ -235,7 +239,7 @@
     function _renderPerPage(pageIndex) {
         return `<li class="pagination-item"><a href="#" class="num" page-index="${pageIndex}">${pageIndex + 1}</a></li>`;
     }
-    </script>
+    </script> -->
 </body>
 
 </html>
