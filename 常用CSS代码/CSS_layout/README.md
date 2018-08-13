@@ -60,20 +60,20 @@ __CSS设置要点：__
 
 准备工作做好之后大概就这样：
 
-[step0](./image/2018-08-13_230048.png)
+![step0](./image/2018-08-13_230048.png)
 接下来我们继续
 
 - .side和.main都设置：`float:left`,.wrap设置`float:right`设置完之后大概就：
 
-[step1](./image/2018-08-13_230422.png)
+![step1](./image/2018-08-13_230422.png)
 
 - .side部分设置`margin-left:-200px`将main部分“拉”上来.wrap部分设置`margin-left:-200px`将自己"拉"上去，此时，三部分都已经在同一行中排列了
 
-[step2](./image/2018-08-14_000541.png)
+![step2](./image/2018-08-14_000541.png)
 
 - .main-content部分设置`margin-left:200px;margin-right:200px`目的是为了三部分的内容展示区域发生重叠，然后就可以看到：
 
-[step3](./image/2018-08-14_000553.png)
+![step3](./image/2018-08-14_000553.png)
 
 - 建议：body部分设置一个最小宽度：`min-width:600px;`,最小宽度的值为：两倍左侧定宽加上右侧定宽
 
@@ -94,19 +94,19 @@ __CSS设置要点__
 
 - 准备工作：给三部分设置高度，背景色，两边的定宽，中间的宽度为100%;
 
-[step0](./image/2018-08-13_233533.png)
+![step0](./image/2018-08-13_233533.png)
 
 - .container设置`padding-left:左侧定宽`，`padding-right:右侧定宽`,同时自适应部分和定宽部分都`float:left`,`position:relative`
 
-[step1](./image/2018-08-13_233944.png)
+![step1](./image/2018-08-13_233944.png)
 
 - .side设置`margin-left:-100%;`，将左侧定宽“拉”上去，同时`right:左侧定宽值`（第二步已经设置了`position:relative`），这样就左侧定宽部分就“归位“了
 
-[step2](./image/2018-08-13_234620.png)
+![step2](./image/2018-08-13_234620.png)
 
 - .wrap部分设置`margin-right:-100%;`这样，右侧定宽部分也完整”归位了“
 
-[step3](./image/2018-08-13_234630.png)
+![step3](./image/2018-08-13_234630.png)
 
 - 最后坑：body设置最小宽度，最小宽度为2*左侧定宽+右侧定宽，不然的话body宽度小于此值的时候布局会崩掉
 
