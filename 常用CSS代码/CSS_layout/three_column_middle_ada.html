@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="三列中间自适应布局">
+	<meta name="Author" content="chiling">
+	<link rel="stylesheet" href="../CSS_reset/reset.css">
+	<title>三列中间自适应布局</title>
+	<style>
+		.clear-fix{
+			zoom:1;
+		}
+		.clear-fix:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		header{
+			background-color: #666;
+			color: #fff;
+			font-size: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		footer{
+			background-color: #666;
+			color: #fff;
+			font-size: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.container{
+			color: #fff;
+			font-size: 16px;
+			line-height: 1.5;
+			min-height: 90vh;
+		}
+		.side{
+			background-color: #3277F3;
+			float: left;
+			height: 400px;
+			margin-right: -200px;
+			position: relative;
+			width: 200px;
+
+		}
+		.main{
+			float: left;
+			width: 100%;
+			
+		}
+		.main-content{
+			background-color: #FF6633;
+			height: 400px;
+			margin: 0 200px 0 200px;
+		}
+		.wrap{
+			background-color: #4EB3B9;
+			float: right;
+			height: 400px;
+			margin-left: -200px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<header>#header</header>
+	<div class="container clear-fix">
+		<div class="side">
+			左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽左侧定宽
+		</div>
+		<div class="main">
+			<div class="main-content">
+				中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应中间自适应
+			</div>
+		</div>
+		<div class="wrap">
+			右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽右侧定宽
+		</div>
+	</div>
+	<footer>#footer</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="双飞翼布局的实现">
+	<link rel="stylesheet" href="../CSS_reset/reset.css">
+	<title>三列中间自适应布局（双飞翼布局）</title>
+	<style>
+		body{
+			min-width: 620px;
+		}
+		.clear-fix{
+			zoom:1;
+		}
+		.clear-fix:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.header,.footer{
+			background-color: #666;
+			color: #fff;
+			font-size: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.container{
+			min-height: 80vh;
+		}
+		.main,.side,.wrap{
+			float: left;
+			min-height: 400px;
+		}
+		.main{
+			width: 100%;
+		}
+		.main-content{
+			background-color: #FF6633;
+			height: 400px;
+			margin-left: 200px;
+			margin-right: 220px;
+		}
+		.side{
+			background-color: #3277F3;
+			margin-left: -100%;
+			width: 200px;
+		}
+		.wrap{
+			background-color: #4EB3B9;
+			margin-left: -220px;
+			position: relative;
+			width: 220px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">#header</div>
+	<div class="container clear-fix">
+		<div class="main">
+			<div class="main-content"></div>
+		</div>
+		<div class="side"></div>
+		<div class="wrap"></div>
+	</div>
+	<div class="footer">#footer</div>
+</body>
+</html>

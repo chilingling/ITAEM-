@@ -2,27 +2,45 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<meta name="keyword" content="两列左侧自适应布局">
+	<meta name="keywords" content="两列左侧自适应布局">
 	<link rel="stylesheet" href="../CSS_reset/reset.css">
 	<title>两列左侧自适应布局</title>
 	<style>
+		.clear-fix:after{
+			content: "";
+			display: table;
+			clear:both;
+		}
 		.box{
-			margin-top: 100px;
+			margin: 180px auto 0;
 		}
 		.left,.right{
 			height: 100px;
 		}
 		.left{
+			/*display: inline-block;*/
+			float: left;
+			margin-right: -90px;
+			width: 100%;
+		}
+		.left-content{
 			background-color: #4285F4;
+			height: 100px;
+			margin-right: 100px;
 		}
 		.right{
 			background-color: #FBBC05;
+			float: right;
+			position: relative;
+			width: 90px;
 		}
 	</style>
 </head>
 <body>
-	<div class="box">
-		<div class="left"></div>
+	<div class="box clear-fix">
+		<div class="left">
+			<div class="left-content"></div>
+		</div>
 		<div class="right"></div>
 	</div>
 </body>

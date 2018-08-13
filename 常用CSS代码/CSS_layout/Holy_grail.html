@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="圣杯布局">
+	<link rel="stylesheet" href="../CSS_reset/reset.css">
+	<title>三列中间自适应布局(圣杯布局)</title>
+	<style>
+		body{
+			min-width: 600px;
+		}
+		.clear-fix:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.header{
+			background-color: #666;
+			color: #fff;
+			font-size: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.footer{
+			background-color: #666;
+			color:#fff;
+			font-size: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			clear: both;
+		}
+		.container{
+			min-height: 80vh;
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		.main,.side,.wrap{
+			float: left;
+			position: relative;
+			height: 400px;
+		}
+		.main{
+			background-color: #FF6633;
+			width: 100%;
+		}
+		.side{
+			background-color: #3277F3;
+			margin-left: -100%;
+			right: 200px;
+			width: 200px;
+		}
+		.wrap{
+			background-color: #4EB3B9;
+			margin-right: -100%;
+			width: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">#header</div>
+	<div class="container clear-fix">
+		<div class="main"></div>
+		<div class="side"></div>
+		<div class="wrap"></div>
+	</div>
+	<div class="footer">#footer</div>
+</body>
+</html>
